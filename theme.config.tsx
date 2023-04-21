@@ -15,7 +15,7 @@ const theme: DocsThemeConfig = {
   ),
   useNextSeoProps() {
     return {
-      titleTemplate: "%s – Rooch",
+      titleTemplate: "%s – MoveFuns",
     };
   },
   project: {
