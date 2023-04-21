@@ -1,0 +1,26 @@
+{
+  "index": {
+    "title": "主页",
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "timestamp": false,
+      "layout": "raw"
+    }
+  },
+  "about": {
+    "title": "关于",
+    "type": "page",
+    "theme": {
+      "sidebar": false,
+      "typesetting": "article"
+    }
+  },
+  "404": {
+    "type": "page",
+    "theme": {
+      "sidebar": false,
+      "typesetting": "article"
+    }
+  }
+}
