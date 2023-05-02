@@ -8,13 +8,13 @@
       "layout": "raw"
     }
   },
-  "about": {
-    "title": "关于",
-    "type": "page",
-    "theme": {
-      "sidebar": false,
-      "typesetting": "article"
-    }
+  "docs": {
+    "title": "文章",
+    "type": "page"
+  },
+  "starTrek":{
+    "title":"星航计划",
+    "type":"page"
   },
   "404": {
     "type": "page",

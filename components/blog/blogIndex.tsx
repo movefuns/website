@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { FilterButton } from "./filterButton";
-import MOVEFUNS_TEAM from "../../data/team";
+import MOVEFUNS_TEAM from "../../content/team";
 import Image from "next/image";
 
 export default function BlogIndex({
