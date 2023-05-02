@@ -8,15 +8,16 @@
       "layout": "raw"
     }
   },
- 
-  "about": {
-    "title": "About",
-    "type": "page",
-    "theme": {
-      "sidebar": false,
-      "timestamp": false,
-      "typesetting": "article"
-    }
+  "docs": {
+    "title": "Docs",
+    "type": "page"
+  },
+  "starTrek":{
+    "title":"StarTrek",
+    "type":"page"
+  },
+  "Projects": {
+    
   },
   "404": {
     "type": "page",

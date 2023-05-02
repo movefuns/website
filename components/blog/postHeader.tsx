@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { getPagesUnderRoute } from "nextra/context";
-import MOVEFUNS_TEAM from "../../data/team";
+import MOVEFUNS_TEAM from "../../content/team";
 import { useState, useEffect } from "react";
 
 export default function PostHeader() {
