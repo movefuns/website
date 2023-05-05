@@ -38,9 +38,9 @@ export default function Index({
         </div>
 
         <div className="grid grid-flow-col justify-center auto-cols-max gap-10">
-          {tags.map((e) => {
+          {tags.map((e,index) => {
             return (
-              <div>
+              <div key={index}>
                 <p className="text-4xl text-center text-gray-600 dark:text-gray-400">
                   {e.large}
                 </p>
