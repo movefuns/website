@@ -9,7 +9,6 @@ const ImageLogo = ({ src, width = 120, height = 16, alt = "" }) => {
       alt={alt}
       width={width}
       height={height}
-      style={{ width: 'auto', height: 'auto' }}
       className="mx-auto my-8"
     />
   );
