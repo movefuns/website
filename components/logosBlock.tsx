@@ -5,7 +5,7 @@ import { prefix } from "./prefix";
 const ImageLogo = ({ src, width = 120, height = 16, alt = "" }) => {
   return (
     <Image
-      src={`${prefix}/partner/ + ${src}`}
+      src={`${prefix}/partner/${src}`}
       alt={alt}
       width={width}
       height={height}
