@@ -29,7 +29,7 @@ const LogosList = () => {
       {/* <ImageLogo src="DAOrayaki.png" /> */}
       {/* <ImageLogo src="denglian.png" /> */}
       <ImageLogo src="moveAccelerator.png" />
-      <ImageLogo src="moveBit.png" />
+      {/* <ImageLogo src="moveBit.png" /> */}
       {/* <ImageLogo src="nonceGeek.png" /> */}
       {/* <ImageLogo src="rebase.png" /> */}
       {/* <ImageLogo src="socialLayer.png" /> */}
