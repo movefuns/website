@@ -8,10 +8,7 @@
       "layout": "raw"
     }
   },
-  "docs": {
-    "title": "Docs",
-    "type": "page"
-  },
+  "docs": "Docs",
   "starTrek":{
     "title":"StarTrek",
     "type":"page"
