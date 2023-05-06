@@ -1,12 +1,13 @@
-import { DocsThemeConfig } from "nextra-theme-docs";
-import { Footer } from "./components/layout/footer";
-import Image from "next/image";
-import { ExpandIcon } from "nextra/icons";
-import { useRouter } from "next/router";
+import { DocsThemeConfig } from "nextra-theme-docs"
+import { Footer } from "./components/layout/footer"
+import Image from "next/image"
+import { ExpandIcon } from "nextra/icons"
+import { useRouter } from "next/router"
+import { prefix } from "./components/prefix"
 
 const theme: DocsThemeConfig = {
   docsRepositoryBase: "https://github.com/movefuns/website",
-  logo: <Image src="/logo/logo.jpeg" alt="MoveFuns" width={50} height={50} />,
+  logo: <Image src={`${prefix}/logo/logo.jpeg`} alt="MoveFuns" width={50} height={50} />,
   useNextSeoProps() {
     return {
       titleTemplate: "%s – MoveFuns",
