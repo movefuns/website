@@ -23,7 +23,7 @@ export default function BlogIndex({
   const [authors, __] = useState(() => {
     let _authors = [textAllAuthors];
 
-    pages.forEach((page) => {
+    pages.forEach((page: any) => {
       _authors = _authors.concat(page.frontMatter.author);
     });
 
@@ -34,7 +34,7 @@ export default function BlogIndex({
   const [categories, ___] = useState(() => {
     let _categories = [textAllCategories];
 
-    pages.forEach((page) => {
+    pages.forEach((page: any) => {
       if (page.frontMatter.category) {
         _categories = _categories.concat(page.frontMatter.category);
       }
@@ -114,7 +114,9 @@ export default function BlogIndex({
           options={authors.map((author) => ({
             id: author,
             text: MOVEFUNS_TEAM[author] ? MOVEFUNS_TEAM[author].name : author,
-            avatar: MOVEFUNS_TEAM[author] ? MOVEFUNS_TEAM[author].avatar : undefined,
+            avatar: MOVEFUNS_TEAM[author]
+              ? MOVEFUNS_TEAM[author].avatar
+              : undefined,
           }))}
           onClick={(author) => {
             setSelectedAuthor(author);
@@ -123,14 +125,14 @@ export default function BlogIndex({
       </div>
 
       {pagesFiltered
-        .sort((p1, p2) =>
+        .sort((p1: any, p2: any) =>
           p1.dateNumber < p2.dateNumber
             ? 1
             : p1.dateNumber > p2.dateNumber
             ? -1
             : 0
         )
-        .map((page) => {
+        .map((page: any) => {
           return (
             <div key={page.route}>
               <Link href={page.route}>
@@ -149,7 +151,9 @@ export default function BlogIndex({
                   <p className="inline-flex gap-2 mt-5">
                     {page.frontMatter.author ? (
                       <Image
-                        src={String(MOVEFUNS_TEAM[page.frontMatter.author].avatar)}
+                        src={String(
+                          MOVEFUNS_TEAM[page.frontMatter.author].avatar
+                        )}
                         width={32}
                         height={32}
                         alt={page.frontMatter.author}

@@ -15,20 +15,20 @@ const theme: DocsThemeConfig = {
   project: {
     link: "https://github.com/movefuns",
   },
-  i18n: [
-    { locale: "en-US", text: "English" },
-    // { locale: "zh-CN", text: "简体中文" },
-  ],
+  // i18n: [
+  //   { locale: "en-US", text: "English" },
+  //   { locale: "zh-CN", text: "简体中文" },
+  // ],
   footer: {
     component: Footer,
   },
-  search: {
-    placeholder: () => {
-      let {locale} = useRouter()
-      return locale === "zh-CN" ? "搜索文章" : "Search Docs"
-    }
+  // search: {
+  //   placeholder: () => {
+  //     let {locale} = useRouter()
+  //     return locale === "zh-CN" ? "搜索文章" : "Search Docs"
+  //   }
     
-  },
+  // },
 };
 
 export default theme;
