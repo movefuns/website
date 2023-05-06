@@ -12,5 +12,6 @@ module.exports = withNextra({
   images:{
     unoptimized : true
   },
-  assetsPublicPath: './'
+  assetPrefix: '/movefuns-website/',
+
 });
