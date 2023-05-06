@@ -8,10 +8,7 @@
       "layout": "raw"
     }
   },
-  "docs": {
-    "title": "文章",
-    "type": "page"
-  },
+  "docs": "文章",
   "starTrek":{
     "title":"星航计划",
     "type":"page"

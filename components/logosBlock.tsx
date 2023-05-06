@@ -1,53 +1,40 @@
-import Image from "next/image"
+import Image from "next/image";
+import { SuiLogo } from "./logos/sui";
+
+const ImageLogo = ({ src, width = 120, height = 16, alt = "" }) => {
+  return (
+    <Image
+      src={"/partner/" + src}
+      alt={alt}
+      width={width}
+      height={height}
+      className="mx-auto my-8"
+    />
+  );
+};
 
 const LogosList = () => {
-  const wrapperClassnames = "flex justify-center items-center gap-8 wrapper mr-8"
-  
+  const wrapperClassnames =
+    "flex justify-center items-center gap-8 wrapper mr-8";
+
   return (
     <div className={wrapperClassnames}>
-      <Image
-        src="/partner/movebit.png"
-        alt="MoveBit"
-        width={30}
-        height={20}
-        className="mx-auto my-8"
-      />
-        <Image
-        src="/logo/logo.jpeg"
-        alt="MoveBit"
-        width={30}
-        height={30}
-        className="mx-auto my-8"
-      />
-        <Image
-        src="/partner/movebit.png"
-        alt="MoveBit"
-        width={30}
-        height={20}
-        className="mx-auto my-8"
-      />
-       <Image
-        src="/logo/logo.jpeg"
-        alt="MoveBit"
-        width={30}
-        height={30}
-        className="mx-auto my-8"
-      />
-        <Image
-        src="/partner/movebit.png"
-        alt="MoveBit"
-        width={30}
-        height={20}
-        className="mx-auto my-8"
-      />
-      <Image
-        src="/logo/logo.jpeg"
-        alt="MoveBit"
-        width={30}
-        height={20}
-        className="mx-auto my-8"
-      />
-      
+      <ImageLogo src="aptos.png" />
+      <SuiLogo height={32} />
+      <ImageLogo src="rooch.png" />
+      {/* <ImageLogo src="antalphaLabs.png" /> */}
+      {/* <ImageLogo src="aptosEden.png" /> */}
+      <ImageLogo src="buidlerDAO.png" />
+      {/* <ImageLogo src="DAOrayaki.png" /> */}
+      {/* <ImageLogo src="denglian.png" /> */}
+      <ImageLogo src="moveAccelerator.png" />
+      <ImageLogo src="moveBit.png" />
+      {/* <ImageLogo src="nonceGeek.png" /> */}
+      {/* <ImageLogo src="rebase.png" /> */}
+      {/* <ImageLogo src="socialLayer.png" /> */}
+      <ImageLogo src="souffl3.png" />
+      {/* <ImageLogo src="thubaDAO.png" /> */}
+      <ImageLogo src="w3cDAO.png" />
     </div>
   );
 };
@@ -55,9 +42,6 @@ const LogosList = () => {
 export default function LogosBlock() {
   return (
     <div className="flex mx-auto 2xl:max-w-7xl overflow-hidden">
-      <LogosList />
-      <LogosList />
-      <LogosList />
       <LogosList />
     </div>
   );
