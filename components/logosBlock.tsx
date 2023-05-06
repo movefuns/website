@@ -10,6 +10,7 @@ const LogosList = () => {
         alt="MoveBit"
         width={30}
         height={20}
+        style={{ width: 'auto', height: 'auto' }}
         className="mx-auto my-8"
       />
         <Image
@@ -17,6 +18,7 @@ const LogosList = () => {
         alt="MoveBit"
         width={30}
         height={30}
+        style={{ width: 'auto', height: 'auto' }}
         className="mx-auto my-8"
       />
         <Image
@@ -24,6 +26,7 @@ const LogosList = () => {
         alt="MoveBit"
         width={30}
         height={20}
+        style={{ width: 'auto', height: 'auto' }}
         className="mx-auto my-8"
       />
        <Image
@@ -31,6 +34,7 @@ const LogosList = () => {
         alt="MoveBit"
         width={30}
         height={30}
+        style={{ width: 'auto', height: 'auto' }}
         className="mx-auto my-8"
       />
         <Image
@@ -38,6 +42,7 @@ const LogosList = () => {
         alt="MoveBit"
         width={30}
         height={20}
+        style={{ width: 'auto', height: 'auto' }}
         className="mx-auto my-8"
       />
       <Image
@@ -45,6 +50,7 @@ const LogosList = () => {
         alt="MoveBit"
         width={30}
         height={20}
+        style={{ width: 'auto', height: 'auto' }}
         className="mx-auto my-8"
       />
       
