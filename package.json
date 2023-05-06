@@ -4,8 +4,10 @@
   "description": "Movefuns website",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start"
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "feed":"node scripts/gen-rss.js"
   },
   "repository": {
     "type": "git",
