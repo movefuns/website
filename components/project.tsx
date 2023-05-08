@@ -1,4 +1,5 @@
 import type { Project } from "../content/projects";
+import { useState,useEffect } from "react";
 
 type ProjectProps = {
   project: Project;
@@ -10,7 +11,28 @@ export default function Project(props: ProjectProps) {
   const { project, detailed = false } = props;
   const { Icon, name, description } = project;
 
-  if (detailed) {
+  const [data,setData] = useState(true)
+
+  useEffect(() => {
+    const userAgent = window.navigator.userAgent;
+    console.log(userAgent);
+    const agents = ["Android", "iPhone","SymbianOS", "Windows Phone", "iPod"];
+    let flag = true;
+    for (let v = 0; v < agents.length; v++) {
+        if (userAgent.indexOf(agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    if(window.screen.width<768){
+          flag = false;
+    }
+    console.log(flag);
+    setData(flag);
+  }, []);
+
+
+  if (data) {
     return (
       <div className="p-10 bg-white shadow-lg rounded-xl dark:bg-opacity-5 ">
         <div>
