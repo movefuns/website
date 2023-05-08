@@ -1,6 +1,6 @@
 {
   "index": {
-    "title": "主页",
+    "title": "Homepage",
     "type": "page",
     "display": "hidden",
     "theme": {
@@ -8,13 +8,13 @@
       "layout": "raw"
     }
   },
-  "docs": {
-    "title": "文章",
-    "type": "page"
-  },
+  "docs": "Docs",
   "starTrek":{
-    "title":"星航计划",
+    "title":"StarTrek",
     "type":"page"
+  },
+  "Projects": {
+    
   },
   "404": {
     "type": "page",

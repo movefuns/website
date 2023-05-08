@@ -49,7 +49,7 @@ const PROJECTS: Projects = [
   },
   {
     name: "Move-JS",
-    description: `Javascript version of the move language compiler and disassemble`,
+    description: `move-js is the runtime for the move-wasm adapter and browser environment`,
     Icon: ChartBarSquareIcon,
     page: "home",
   },
@@ -59,12 +59,12 @@ const PROJECTS: Projects = [
     Icon: CurrencyDollarIcon,
     page: "home",
   },
-  {
-    name: "Move-IDE",
-    description: `balabala...`,
-    Icon: KeyIcon,
-    page: "all",
-  },
+  // {
+  //   name: "Move-IDE",
+  //   description: `balabala...`,
+  //   Icon: KeyIcon,
+  //   page: "all",
+  // },
 ];
 
 export default PROJECTS;
